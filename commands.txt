@@ -1,0 +1,22 @@
+curl -X GET http://blue.cs.sonoma.edu:8116/api/v1/member/1/weightloss
+
+curl -X POST http://blue.cs.sonoma.edu:8116/api/v1/member/4/giveFirstWorkoutRoutine
+
+curl -X GET http://blue.cs.sonoma.edu:8116/api/v1/member/member1FullWorkoutRoutines
+
+
+
+WORKOUT ROUTINE
+curl -X PUT -H 'Content-type: application/json' -d '{"old_name":"Monday Workout","new_name":"Thursday Workout"}' http://blue.cs.sonoma.edu:8116/api/v1/workoutRoutine/1
+
+curl -X DELETE -H 'Content-type: application/json' -d '{"name":"Wednesday Workout"}' http://blue.cs.sonoma.edu:8116/api/v1/workoutRoutine/1
+
+curl -X DELETE http://blue.cs.sonoma.edu:8116/api/v1/workoutRoutine/1/all
+
+
+
+curl -X PUT -H 'Content-type: application/json' -d '{"name":"Buff Johnson","email":"supportyourself@gmail.com","rate":"50"}' http://blue.cs.sonoma.edu:8116/api/v1/trainer/1
+
+curl -X POST -H 'Content-type: application/json' -d '{"id":"6","name":"Charlie Roger","email":"rogerc@gmail.com","rate":"45"}' http://blue.cs.sonoma.edu:8116/api/v1/trainer
+
+curl -X GET http://blue.cs.sonoma.edu:8116/api/v1/trainer/2/training
