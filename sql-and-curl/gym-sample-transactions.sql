@@ -1,8 +1,8 @@
 -- view the gym trainers and their corresponding gym members where the gym member has no workout routine
 -- outer join, query joining 3 or more tables
 select GYM_Trainer.id as trainer_id, GYM_Trainer.name as trainer_name, GYM_Member.id as member_id, GYM_Member.name as member_name 
-	from GYM_Trainer join GYM_Trains on GYM_Trainer.id = GYM_Trains.trainer_id 
-	join GYM_Member on GYM_Trains.member_id = GYM_Member.id
+    from GYM_Trainer join GYM_Trains on GYM_Trainer.id = GYM_Trains.trainer_id 
+    join GYM_Member on GYM_Trains.member_id = GYM_Member.id
     left outer join GYM_Workout_Routine on GYM_Member.id = GYM_Workout_Routine.member_id where GYM_Workout_Routine.member_id is null;
 
 -- view all gym members who have elevated blood pressure (along with the corresponding stat entries that have elevated blood pressure)
