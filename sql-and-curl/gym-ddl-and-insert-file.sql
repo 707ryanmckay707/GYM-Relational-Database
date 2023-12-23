@@ -155,12 +155,10 @@ CREATE PROCEDURE give_first_workout(IN in_member_id INT)
         DECLARE num_of_workouts INT;
         SELECT COUNT(member_id) INTO num_of_workouts FROM GYM_Workout_Routine WHERE member_id = in_member_id;
         IF num_of_workouts < 1 THEN
-            BEGIN
-                INSERT INTO GYM_Workout_Routine VALUES (in_member_id, 'First Workout');
-                INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Pushups', 20);
-                INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Situps', 20);
-                INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Jumping Jacks', 50);
-            END;
+            INSERT INTO GYM_Workout_Routine VALUES (in_member_id, 'First Workout');
+            INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Pushups', 20);
+            INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Situps', 20);
+            INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Jumping Jacks', 50);
         END IF;
     END; //
 delimiter ;
