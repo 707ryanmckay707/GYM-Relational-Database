@@ -136,6 +136,7 @@ DROP FUNCTION IF EXISTS weight_loss;
 delimiter //
 CREATE FUNCTION weight_loss(in_member_id INT)
     RETURNS INT
+    READS SQL DATA
     BEGIN
         DECLARE first_weight INT;
         DECLARE last_weight INT;
