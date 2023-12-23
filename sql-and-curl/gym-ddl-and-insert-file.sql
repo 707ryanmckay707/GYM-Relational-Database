@@ -83,83 +83,82 @@ CREATE TABLE GYM_Trains
         ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-insert into GYM_Member values (1, 'Bryan Stevens', 'stevensb@gmail.com');
-insert into GYM_Member values (2, 'Steven George', 'strongman45@yahoo.com');
-insert into GYM_Member values (3, 'Mike Molasses', 'cooldude64@yahoo.com');
-insert into GYM_Member values (4, 'Roger Sideways', 'thesidewaylife@gmail.com');
-insert into GYM_Member values (5, 'Michelle Moore', 'mmoore@gmail.com');
+INSERT INTO GYM_Member VALUES (1, 'Bryan Stevens', 'stevensb@gmail.com');
+INSERT INTO GYM_Member VALUES (2, 'Steven George', 'strongman45@yahoo.com');
+INSERT INTO GYM_Member VALUES (3, 'Mike Molasses', 'cooldude64@yahoo.com');
+INSERT INTO GYM_Member VALUES (4, 'Roger Sideways', 'thesidewaylife@gmail.com');
+INSERT INTO GYM_Member VALUES (5, 'Michelle Moore', 'mmoore@gmail.com');
 
-insert into GYM_Trainer values (1, 'Buff Johnson', 'supportyourself@gmail.com', 40);
-insert into GYM_Trainer values (2, 'Stacy Leeland', 'stacylee@gmail.com', 60);
-insert into GYM_Trainer values (3, 'Tracy Davis', 'tracydavis@yahoo.com', 30);
-insert into GYM_Trainer values (4, 'Miles Travis', 'mtravis@yahoo.com', 35);
-insert into GYM_Trainer values (5, 'Tyler Conway', 'tconway@gmail.com', 55);
+INSERT INTO GYM_Trainer VALUES (1, 'Buff Johnson', 'supportyourself@gmail.com', 40);
+INSERT INTO GYM_Trainer VALUES (2, 'Stacy Leeland', 'stacylee@gmail.com', 60);
+INSERT INTO GYM_Trainer VALUES (3, 'Tracy Davis', 'tracydavis@yahoo.com', 30);
+INSERT INTO GYM_Trainer VALUES (4, 'Miles Travis', 'mtravis@yahoo.com', 35);
+INSERT INTO GYM_Trainer VALUES (5, 'Tyler Conway', 'tconway@gmail.com', 55);
 
-insert into GYM_Workout_Routine values (1, 'Monday Workout');
-insert into GYM_Workout_Routine values (1, 'Wednesday Workout');
-insert into GYM_Workout_Routine values (2, 'Arm Workout');
-insert into GYM_Workout_Routine values (2, 'Leg Workout');
-insert into GYM_Workout_Routine values (3, 'Midweek Workout');
+INSERT INTO GYM_Workout_Routine VALUES (1, 'Monday Workout');
+INSERT INTO GYM_Workout_Routine VALUES (1, 'Wednesday Workout');
+INSERT INTO GYM_Workout_Routine VALUES (2, 'Arm Workout');
+INSERT INTO GYM_Workout_Routine VALUES (2, 'Leg Workout');
+INSERT INTO GYM_Workout_Routine VALUES (3, 'Midweek Workout');
 
-insert into GYM_Excercise values (1, 'Monday Workout', 'Pushups', 20);
-insert into GYM_Excercise values (1, 'Monday Workout', 'Situps', 15);
-insert into GYM_Excercise values (1, 'Wednesday Workout', 'Jumping Jacks', 50);
-insert into GYM_Excercise values (1, 'Wednesday Workout', 'Tricep Curls', 30);
-insert into GYM_Excercise values (1, 'Wednesday Workout', 'Bicep Curls', 25);
-insert into GYM_Excercise values (2, 'Arm Workout', 'Tricep Curls', 50);
-insert into GYM_Excercise values (2, 'Arm Workout', 'Bicep Curls', 50);
+INSERT INTO GYM_Excercise VALUES (1, 'Monday Workout', 'Pushups', 20);
+INSERT INTO GYM_Excercise VALUES (1, 'Monday Workout', 'Situps', 15);
+INSERT INTO GYM_Excercise VALUES (1, 'Wednesday Workout', 'Jumping Jacks', 50);
+INSERT INTO GYM_Excercise VALUES (1, 'Wednesday Workout', 'Tricep Curls', 30);
+INSERT INTO GYM_Excercise VALUES (1, 'Wednesday Workout', 'Bicep Curls', 25);
+INSERT INTO GYM_Excercise VALUES (2, 'Arm Workout', 'Tricep Curls', 50);
+INSERT INTO GYM_Excercise VALUES (2, 'Arm Workout', 'Bicep Curls', 50);
 
-insert into GYM_Charge values (2, 1, '2021-03-01 10:10:05', 60);
-insert into GYM_Charge values (2, 2, '2021-03-01 11:10:15', 45);
-insert into GYM_Charge values (3, 3, '2021-03-03 13:25:07', 30);
-insert into GYM_Charge values (5, 1, '2021-03-03 13:30:00', 55);
-insert into GYM_Charge values (1, 4, '2021-03-04 08:15:45', 80);
+INSERT INTO GYM_Charge VALUES (2, 1, '2021-03-01 10:10:05', 60);
+INSERT INTO GYM_Charge VALUES (2, 2, '2021-03-01 11:10:15', 45);
+INSERT INTO GYM_Charge VALUES (3, 3, '2021-03-03 13:25:07', 30);
+INSERT INTO GYM_Charge VALUES (5, 1, '2021-03-03 13:30:00', 55);
+INSERT INTO GYM_Charge VALUES (1, 4, '2021-03-04 08:15:45', 80);
 
-insert into GYM_Stats values (1, '2021-03-07 12:10:35', 160, 122, 79);
-insert into GYM_Stats values (2, '2021-03-07 12:15:30', 158, 115, 75);
-insert into GYM_Stats values (3, '2021-03-08 07:05:29', 180, 116, 78);
-insert into GYM_Stats values (1, '2021-03-08 12:12:06', 159, 120, 77);
-insert into GYM_Stats values (2, '2021-03-08 12:14:00', 160, 116, 75);
+INSERT INTO GYM_Stats VALUES (1, '2021-03-07 12:10:35', 160, 122, 79);
+INSERT INTO GYM_Stats VALUES (2, '2021-03-07 12:15:30', 158, 115, 75);
+INSERT INTO GYM_Stats VALUES (3, '2021-03-08 07:05:29', 180, 116, 78);
+INSERT INTO GYM_Stats VALUES (1, '2021-03-08 12:12:06', 159, 120, 77);
+INSERT INTO GYM_Stats VALUES (2, '2021-03-08 12:14:00', 160, 116, 75);
 
-insert into GYM_Trains values(2, 1);
-insert into GYM_Trains values(2, 2);
-insert into GYM_Trains values(3, 3);
-insert into GYM_Trains values(5, 1);
-insert into GYM_Trains values(1, 4);
+INSERT INTO GYM_Trains VALUES(2, 1);
+INSERT INTO GYM_Trains VALUES(2, 2);
+INSERT INTO GYM_Trains VALUES(3, 3);
+INSERT INTO GYM_Trains VALUES(5, 1);
+INSERT INTO GYM_Trains VALUES(1, 4);
 
 
-drop view if exists member_1_full_workout_routines;
-create view member_1_full_workout_routines as
-    select name, type, reps from GYM_Workout_Routine natural join GYM_Excercise where member_id = 1;
+DROP VIEW IF EXISTS member_1_full_workout_routines;
+CREATE VIEW member_1_full_workout_routines AS
+    SELECT name, type, reps FROM GYM_Workout_Routine NATURAL JOIN GYM_Excercise WHERE member_id = 1;
     
-drop function if exists weight_loss;
+DROP FUNCTION IF EXISTS weight_loss;
 delimiter //
-create function weight_loss(in_member_id INT)
-    returns INT
-    begin
-        declare first_weight INT;
-        declare last_weight INT;
-        declare weight_loss INT;
-            select weight into first_weight from GYM_Stats where member_id = in_member_id ORDER BY time_stamp LIMIT 1;
-            select weight into last_weight from GYM_Stats where member_id = in_member_id ORDER BY time_stamp DESC LIMIT 1;
+CREATE FUNCTION weight_loss(in_member_id INT)
+    RETURNS INT
+    READS SQL DATA
+    BEGIN
+        DECLARE first_weight INT;
+        DECLARE last_weight INT;
+        DECLARE weight_loss INT;
+            SELECT weight INTO first_weight FROM GYM_Stats WHERE member_id = in_member_id ORDER BY time_stamp LIMIT 1;
+            SELECT weight INTO last_weight FROM GYM_Stats WHERE member_id = in_member_id ORDER BY time_stamp DESC LIMIT 1;
             set weight_loss = first_weight - last_weight;
-        return weight_loss;
-    end; //
+        RETURN weight_loss;
+    END; //
 delimiter ;
 
-drop procedure if exists give_first_workout;
+DROP PROCEDURE IF EXISTS give_first_workout;
 delimiter //
-create procedure give_first_workout(IN in_member_id INT)
-    begin
-        declare num_of_workouts INT;
-        select count(member_id) into num_of_workouts from GYM_Workout_Routine where member_id = in_member_id;
-        if num_of_workouts < 1 then
-            begin
-                insert into GYM_Workout_Routine values (in_member_id, 'First Workout');
-                insert into GYM_Excercise values (in_member_id, 'First Workout', 'Pushups', 20);
-                insert into GYM_Excercise values (in_member_id, 'First Workout', 'Situps', 20);
-                insert into GYM_Excercise values (in_member_id, 'First Workout', 'Jumping Jacks', 50);
-            end;
-        end if;
-    end; //
+CREATE PROCEDURE give_first_workout(IN in_member_id INT)
+    BEGIN
+        DECLARE num_of_workouts INT;
+        SELECT COUNT(member_id) INTO num_of_workouts FROM GYM_Workout_Routine WHERE member_id = in_member_id;
+        IF num_of_workouts < 1 THEN
+            INSERT INTO GYM_Workout_Routine VALUES (in_member_id, 'First Workout');
+            INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Pushups', 20);
+            INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Situps', 20);
+            INSERT INTO GYM_Excercise VALUES (in_member_id, 'First Workout', 'Jumping Jacks', 50);
+        END IF;
+    END; //
 delimiter ;
